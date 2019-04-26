@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Green)(type Legacy)(uri ${KIPRJMOD}/Green.lib)(options "")(descr ""))
+  (lib (name STM32F378CCT6)(type Legacy)(uri ${KIPRJMOD}/STM32F378CCT6.lib)(options "")(descr ""))
 )
