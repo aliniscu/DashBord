@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name green-ic-part)(type Legacy)(uri ${KIPRJMOD}/green-ic-part.lib)(options "")(descr ""))
+  (lib (name PTH04070)(type Legacy)(uri D:/dashboard/KiCAD/2020-02-19_11-37-26/2020-02-19_11-37-26.lib)(options "")(descr ""))
+  (lib (name PTN78000)(type Legacy)(uri D:/dashboard/KiCAD/2020-02-19_11-41-33/2020-02-19_11-41-33.lib)(options "")(descr ""))
 )
