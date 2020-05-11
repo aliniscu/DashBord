@@ -14,8 +14,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 6350 6550 0    50   ~ 0
-spi1_miso\n
+Text Notes 6350 6600 0    50   ~ 0
+SWI\n\n
 Text Notes 6350 6750 0    50   ~ 0
 i2c1_scl
 Text Notes 6350 6650 0    50   ~ 0
@@ -1535,8 +1535,6 @@ Wire Wire Line
 	4950 6850 4550 6850
 Text GLabel 4550 6850 0    50   Input ~ 0
 SCL2
-Text GLabel 6800 6550 2    50   Input ~ 0
-MISO
 Wire Wire Line
 	6350 5750 6800 5750
 Text GLabel 6800 5750 2    50   Input ~ 0
@@ -2510,10 +2508,8 @@ F 3 "~" H 3000 10800 50  0001 C CNN
 	1    3000 10800
 	1    0    0    -1  
 $EndComp
-Text GLabel 6600 6150 2    50   Input ~ 0
+Text GLabel 6800 6150 2    50   Input ~ 0
 USART1_Tx_LIN
-Wire Wire Line
-	6350 6150 6600 6150
 Text GLabel 6600 7550 2    50   Input ~ 0
 USART1_Rx_LIN
 Wire Wire Line
@@ -2673,7 +2669,6 @@ NoConn ~ 4950 7950
 NoConn ~ 4950 7550
 NoConn ~ 4950 7050
 NoConn ~ 4950 6950
-NoConn ~ 4950 5350
 NoConn ~ 4950 5450
 NoConn ~ 4950 5650
 NoConn ~ 6350 6050
@@ -2866,4 +2861,64 @@ Text GLabel 6800 6450 2    47   Input ~ 0
 GPIO_Out_CS2
 Wire Wire Line
 	6350 6450 6800 6450
+$Comp
+L KLDX-0202-AC:KLDX-0202-AC J4
+U 1 1 5EB236E4
+P 14650 5500
+F 0 "J4" H 14788 5532 50  0000 L CNN
+F 1 "KLDX-0202-AC" H 14788 5441 50  0000 L CNN
+F 2 "green-ic-footprint:KYCON_KLDX-0202-AC" H 14650 5500 50  0001 L BNN
+F 3 "" H 14650 5500 50  0001 L BNN
+F 4 "KLDX-0202-AC" H 14650 5500 50  0001 L BNN "Field4"
+F 5 "Manufacturer recommendation" H 14650 5500 50  0001 L BNN "Field5"
+F 6 "In stock" H 14650 5500 50  0001 L BNN "Field6"
+F 7 "Conn Power PIN 2 POS Solder RA Thru-Hole 3 Terminal 1 Port" H 14650 5500 50  0001 L BNN "Field7"
+F 8 "--" H 14650 5500 50  0001 L BNN "Field8"
+F 9 "KYCON" H 14650 5500 50  0001 L BNN "Field9"
+	1    14650 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR0133
+U 1 1 5EB4E902
+P 14350 5300
+F 0 "#PWR0133" H 14350 5150 50  0001 C CNN
+F 1 "+24V" H 14365 5473 50  0000 C CNN
+F 2 "" H 14350 5300 50  0001 C CNN
+F 3 "" H 14350 5300 50  0001 C CNN
+	1    14350 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 5400 14350 5400
+Wire Wire Line
+	14350 5400 14350 5300
+$Comp
+L power:GND #PWR0134
+U 1 1 5EB80737
+P 14350 5650
+F 0 "#PWR0134" H 14350 5400 50  0001 C CNN
+F 1 "GND" H 14355 5477 50  0000 C CNN
+F 2 "" H 14350 5650 50  0001 C CNN
+F 3 "" H 14350 5650 50  0001 C CNN
+	1    14350 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 5600 14350 5600
+Wire Wire Line
+	14350 5600 14350 5650
+Wire Wire Line
+	14450 5500 14350 5500
+Wire Wire Line
+	14350 5500 14350 5600
+Connection ~ 14350 5600
+Text GLabel 6800 6550 2    50   Input ~ 0
+SWJ-DP
+Wire Wire Line
+	6350 6150 6800 6150
+Text GLabel 4800 5350 0    50   Input ~ 0
+NRST
+Wire Wire Line
+	4950 5350 4800 5350
 $EndSCHEMATC

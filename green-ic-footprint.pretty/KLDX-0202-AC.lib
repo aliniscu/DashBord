@@ -1,0 +1,33 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# KLDX-0202-AC
+#
+DEF KLDX-0202-AC J 0 40 Y N 1 L N
+F0 "J" -100 160 50 H V L BNN
+F1 "KLDX-0202-AC" -100 -220 50 H V L BNN
+F2 "KYCON_KLDX-0202-AC" 0 0 50 H I L BNN
+F3 "--" 0 0 50 H I L BNN
+F4 "KLDX-0202-AC" 0 0 50 H I L BNN
+F5 "Manufacturer recommendation" 0 0 50 H I L BNN
+F6 "In stock" 0 0 50 H I L BNN
+F7 "Conn Power PIN 2 POS Solder RA Thru-Hole 3 Terminal 1 Port" 0 0 50 H I L BNN
+F8 "--" 0 0 50 H I L BNN
+F9 "KYCON" 0 0 50 H I L BNN
+DRAW
+S -100 80 110 120 0 0 0 F
+P 2 0 0 6 -100 -100 0 -100 N
+P 2 0 0 6 -100 0 -30 0 N
+P 2 0 0 10 -40 -60 -30 -90 N
+P 2 0 0 10 -30 -90 -20 -60 N
+P 2 0 0 6 -30 0 -30 -90 N
+P 2 0 0 10 -20 -60 -40 -60 N
+P 2 0 0 6 0 -100 60 -30 N
+P 2 0 0 6 60 -30 110 -100 N
+X 1 1 -200 100 100 R 40 40 0 0 P
+X 2 2 -200 -100 100 R 40 40 0 0 P
+X 3 3 -200 0 100 R 40 40 0 0 P
+ENDDRAW
+ENDDEF
+#
+#End Library
